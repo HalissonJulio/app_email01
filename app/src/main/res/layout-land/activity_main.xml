@@ -16,7 +16,7 @@
         android:ems="10"
         android:hint="@string/et_Email"
         android:inputType="textEmailAddress"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnEnviar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -30,7 +30,7 @@
         android:ems="10"
         android:hint="@string/et_Assunto"
         android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnEnviar"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etEmail" />
 
@@ -46,20 +46,20 @@
         android:gravity="top"
         android:hint="@string/et_Texto"
         android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/btnEnviar"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnEnviar"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etAssunto" />
+        app:layout_constraintTop_toBottomOf="@+id/etAssunto"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/btnEnviar"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="8dp"
         android:text="@string/btn_Enviar"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
